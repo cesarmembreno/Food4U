@@ -1,0 +1,335 @@
+body{
+    font-family: "Roboto, sans serif";
+    margin: 0;
+    background-color: #ffffbb;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    width: 880px;
+    background-color: #89d631;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;  
+}
+
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 900px;
+}
+
+.wrapper .card{
+    background: rgb(231, 230, 230);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    animation: animate 12s linear infinite;
+    animation-delay: calc(6s * var(--delay));
+    bottom: 10%;
+    height: 700px;
+    text-align: justify;
+}
+.outer:hover .card{
+    animation-play-state: paused;
+    
+}
+.wrapper .card:last-child{
+    animation-delay: calc(-2 * var(--delay));
+}
+@keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+}
+5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+}
+25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+}
+45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+}
+65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+}
+}
+.card .content{
+    display: flex;
+    align-items: center;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card .details{
+    margin-left: 30px;
+}
+.details span{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.card a:hover{
+    transform: scale(0.94);
+}
+
+.logo{
+    display: flex;
+    
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 90px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.reservaciones{
+    background-color: #a9e159;
+    width: 900px;
+    height: 750px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.reservaciones img{
+    padding: 20px;
+    position: relative;
+ }   
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0,5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    color: white;
+    background-color: rgb(84, 189, 35);
+    position: absolute;
+    left: 25%;
+    top: 130%;
+}
+
+ button:hover{
+    background-color: rgb(79, 161, 40);
+    cursor: pointer;
+ }
+
+ #Producto h2{
+     font-family: "Mistery Quest";
+     padding-left: 45%;
+     transition: all 400ms ease;
+ }
+ #Producto{
+    width: 900px;
+    height: 1200px;
+    margin-top: 30px;
+    background-color: #c7eb7a;
+    position: relative;
+}
+
+#Producto img{
+    border-radius: 7px;
+}
+
+#Producto img:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+ #Producto .imagen1{
+    position: absolute;
+    left: 5%;
+    top: 200px;
+}
+
+#Producto .imagen2{
+    position: absolute;
+    left: 60%;
+    top: 200px;
+}
+
+#Producto .imagen3{
+    position: absolute;
+    left: 5%;
+    top: 700px;
+}
+
+#Producto .imagen4{
+    position: absolute;
+    left: 60%;
+    top: 700px;
+}
+
+ .container{
+     width: 100%;
+     max-width: 440px;
+     margin-top: 30px;
+ }
+
+ .lbl-menu{
+     background-color: #a9e159;
+ }
+ 
+ .lbl-menu label{
+     display: inline-block;
+     padding: 20px;
+     color: #fff;
+     cursor: pointer;
+     transition: all 400ms ease;
+ }
+
+ .lbl-menu label:hover{
+     background: #28435d;
+ }
+
+ .content{
+     position: relative;
+ }
+ 
+ .content div{
+     position: absolute;
+     line-height: 1.8;
+     transition: all 600ms ease;
+     opacity: 0;
+     visibility: hidden;
+     transform: scale(0.90);
+     padding: 30px;
+     background: #fff;
+     padding-bottom: 40px;
+ }
+
+ #radio1,#radio2,#radio3{
+     display: none;
+ }
+
+ #radio1:checked ~ .tab1,
+ #radio2:checked ~ .tab2,
+ #radio3:checked ~ .tab3{
+     opacity: 1;
+     visibility: visible;
+     transform: scale(1);
+ }
+
+ .content div::after{
+position: absolute;
+content: "";
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid transparent;
+border-bottom: 10px solid #fff;
+bottom: 100%;
+left: 28px;
+ }
+
+ .content .tab2:after{
+     left: 122px;
+ }
+
+ .content .tab3:after{
+    left: 210px;
+}
+
+.Caledario{
+    position: absolute;
+    left: 50px;
+    top: 2500px;
+    background-color: #ffffbb;
+    width: 450px;
+}
+
+form{
+    width: 450px;
+    position: absolute;
+    top: 2100px;
+    left: 450px;
+    margin: auto;
+    background-color: #e3f59b;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 7px;
+}
+
+form .h2{
+color: rgb(14, 14, 14);
+text-align: center;
+margin: 0;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+
+#boton{
+    background: #f8f5f1;
+    color: rgb(12, 12, 12);
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+

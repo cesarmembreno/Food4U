@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascrpit" defer></script>
+    <title>Food 4 U</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="logo de la compania">
+            <h2 class="nombre-empresa">Food 4 U</h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link"> Login </a>
+        </nav>
+    </header>
+
+   <!--carrusel-->
+ <div class="wrapper">
+   <div class="outer">
+      <div class="card" style="--delay:-1;">
+         <div class="contentc">
+            <div class="details">
+               <span class="name">Historia</span>
+               <p>Food4U fue fundado en Bogota Colombia en el año 1988 por Don Armando Lattini,
+                  un italiano que junto a su esposa Phati Hodsong de procedencia Americana
+                  decidieron traer a la población colombiana los sabores de ambas tierras,
+                  combinando asi la comida rápida a un estilo Italiano.</p>
+            </div>
+         </div>
+      </div>
+      <div class="card" style="--delay:0;">
+         <div class="contentc">
+            <div class="details">
+               <span class="name">Premios</span>
+               <p>El producto mas famoso del restaurante es una Hamburguesa Chitta, la cual ha
+                  ganado reconocimientos en diversas convenciones internacionales tales como:
+                  <li>Manhathan 1999- The best gourmet Burger, first place</li>
+                  <li>Stn Lucia 2001- Th royal preference, second place</li>
+                  <li>Bogota, Colombia 2001- La Delicia de Bogota, primer lugar.</li>
+                  <li>Madrid, España 2004- La mejor hamburguesa gourmet</li>
+                  <li>Buenos Aires- Argentina 2006 – Champio of all tasted</li>
+                  <li>New york, Estados Unidos 2010- The royal Hamburguer</li>
+                  <li>Texas, Estados Unidos 2016- Favorite flavore</li>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+
+    <div class="reservaciones">
+        <img src="sandwich-2977251_1920.jpg" height= "700" width="800"/>
+        <button>RESERVA AHORA</button>
+    </div>
+
+    <section id="Producto">
+        <h2>MENÚ</h2>
+    <div class="imagen1">
+        <img src="bakery-1868396.jpg" width="300" height="400"> 
+        </div>
+        <div class="imagen2">
+        <img src="coffee-4908764_1920.jpg" width="300" height="400">
+        </div>
+        <div class="imagen3">
+        <img src="pizza-2589575_1920.jpg" width="300" height="400">
+        </div>
+        <div class="imagen4">
+        <img src="bread-101636.jpg" width="300" height="400">
+        </div>
+    </section>
+
+
+<div class="container">
+    <div class="lbl-menu">
+        <label for="radio1">Misión</label>
+        <label for="radio2">Visión</label>
+        <label for="radio3">Valores</label>
+    </div>
+
+    <div class="content">
+        <input type="radio" name="radio" id="radio1">
+        <div class="tab1">
+            <h2>Misión</h2>
+            <p>satisfacer las necesidades gastronómicas de nuestros clientes, ofreciendo
+                alimentos y servicios con la más alta calidad, donde se sobrepasen las
+                expectativas de nuestros clientes y ser un espacio de trabajo que permita la
+                realización personal y el Desarrollo de sus colaboradores en el grupo.</p>
+        </div>
+
+        <input type="radio" name="radio" id="radio2">
+        <div class="tab2">
+            <h2>Visión</h2>
+            <p>Nuestra visión a futuro es ayudar a crear una localidad más saludable,
+                más consciente sobre su nutrición, y que nuestra ciudad tenga una opción
+                confiable y de bajo costo para comer bien, sin sacrificar el placer de comer.</p>
+        </div>
+
+        <input type="radio" name="radio" id="radio3">
+        <div class="tab3">
+            <h2>Valores</h2>
+            <p>Honestidad, confianza, firmeza, responsabilidad y liderazgo.</p>
+        </div>
+    </div>
+</div>
+    
+<div class= "Caledario">
+    <p align="center"><b><font size="5">Mes actual<br><br>
+        <SCRIPT LANGUAGE="JavaScript">
+        function montharray(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+        {
+           this[0] = m0;
+           this[1] = m1;
+           this[2] = m2;
+           this[3] = m3;
+           this[4] = m4;
+           this[5] = m5;
+           this[6] = m6;
+           this[7] = m7;
+           this[8] = m8;
+           this[9] = m9;
+           this[10] = m10;
+           this[11] = m11;
+        }
+        
+        function MakeArray(n) {this.length = n; return this;}
+          var Days = new MakeArray(7);
+          var Months = new MakeArray(12);
+          Days[1]="Domingo"; Days[2]="Lunes"; Days[3]="Martes";   Days[4]="Miércoles";
+          Days[5]="Jueves"; Days[6]="Viernes"; Days[7]="Sábado";
+          Months[1]="Enero"; Months[2]="Febrero"; Months[3]="Marzo";   Months[4]="Abril"; 
+          Months[5]="Mayo"; Months[6]="Junio"; Months[7]="Julio";   Months[8]="Agosto"; 
+          Months[9]="Septiembre"; Months[10]="Octubre"; Months[11]="Noviembre"; 
+          Months[12]="Diciembre";
+        
+          function getNiceDate(theDate) {
+          return Days[theDate.getDay()+1] + " " + theDate.getDate() + " " +
+          Months[theDate.getMonth()+1] + " " + theDate.getYear(); }
+        
+        
+        function calendar()
+        {
+           today = new Date();
+           var thisDay;
+           var monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
+           var monthNames2 = " 1 2 3 4 5 6 7 8 9101112";
+           var monthDays = new montharray(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+           year = today.getFullYear();
+           if(year<2000)year+=1900;
+           thisDay = today.getDate();
+           if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+              monthDays[1] = 29;
+           nDays = monthDays[today.getMonth()];
+           firstDay = today;
+           firstDay.setDate(1);
+           var lastMod = new Date();
+           startDay = firstDay.getDay();
+           document.write("<TABLE BORDER=\"3\" CELLPADDING=\"6\">");
+           document.write("<TR><TH COLSPAN=7>");
+           document.write(getNiceDate(lastMod));
+           document.write("<TR><TH>Dom<TH>Lun<TH>Mar<TH>Mie<TH>Jue<TH>Vie<TH>Sáb");
+           document.write("<TR>");
+           column = 0;
+           for (i=0; i<startDay; i++)
+           {
+              document.write("<TD>");
+              document.write("<CENTER>");
+              document.write("&nbsp");
+              column++;
+           }
+           for (i=1; i<=nDays; i++)
+           {
+              document.write("<TD>");
+              if (column == 0) 
+                 document.write("<FONT COLOR=\"red\">");
+              if (column == 6) 
+                 document.write("<FONT COLOR=\"black\">");               
+              if (i == thisDay)
+                 document.write("<FONT COLOR=\"blue\"><b>");
+              document.write("<center>");
+              document.write(i);
+              document.write("</center>");
+              if (i == thisDay)
+                 document.write("</b>")
+              if (column == 7||column == 0||i == thisDay) 
+                 document.write("</FONT>")
+              column++;
+              if (column == 7)
+              {
+                 document.write("<TR>");
+                 column = 0;
+              }
+           }
+           document.write("</TABLE>");
+        }
+        </SCRIPT>
+        </head>
+        <body>
+        <SCRIPT LANGUAGE="JavaScript">
+        calendar();
+        </SCRIPT>
+        </b></p>
+</div>
+
+<form action="">
+    <h2>CONTACTANOS</h2>
+    <input type="text" name="Nombre" placeholder="Nombre">
+    <input type="text" name="Nombre" placeholder="Correo">
+    <input type="text" name="Nombre" placeholder="Teléfono">
+    <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+    <input type="button" value="Enviar" id="boton">
+</form>
+
+</body>
+</html>
